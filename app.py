@@ -1,5 +1,4 @@
-from pydantic_core.core_schema import NoneSchema
-from langchain_openai import OpenAI
+# from langchain_openai import OpenAI
 import streamlit as st
 import os, json, dotenv, tempfile 
 from pathlib import Path
@@ -18,8 +17,8 @@ from summary import *
 
 # API key input
 # load the .env file and invoke the secret API key from the file
-dotenv.load_dotenv("API.env")
-OpenAI.api_key = os.getenv("OPEN_API_KEY")
+# dotenv.load_dotenv("API.env")
+# OpenAI.api_key = os.getenv("OPEN_API_KEY")
 
 
 # Set page config and title
