@@ -7,7 +7,7 @@ import os
 
 class Classifier:
     def __init__(self):
-        model_path = "model" # os.path.join(os.getcwd(),"SUMMARIZER", "model")
+        model_path = os.path.join(os.getcwd(),"SUMMARIZER", "model")
         # classification labels
         self.labels = {'01_주장':0, '02_사실':1, '03_판단':2, '04_결론':3}
         self.n_labels = len(self.labels)

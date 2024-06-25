@@ -49,11 +49,14 @@ class FactExtractor:
         # 별지 및 판사 이름 제거
         sentences = [sent[:, 1] for sent in sentences]
         sentences = [fact for sentence in sentences for fact in sentence if not re.search(r'별\s+지', fact)]
-        sentences = sentences[:-1] if re.search("판사", sentences[-1]) else sentences
+        try:
+            sentences = sentences[:-1] if re.search("판사", sentences[-1]) else sentences
+        except:
+            pass
         return sentences
 
     def extract_facts(self, extracted_sentences):
-        return [sentence for group in extracted_sentences for sentence in group if self.classifier.infer(sentence)[0] == 1]
+        return [sentence for sentence in extracted_sentences if self.classifier.infer(sentence)[0] == 1]
 
     def is_fact_head(self, head):
         return self.section_splitter.is_fact_head(head) and "원심" not in head
