@@ -1,6 +1,7 @@
 # precedent-summarize
 ## Project Overview
 본 시스템은 일반 사용자 및 법률인이 판결문을 검색하고, 해당 판결문의 원문, 요약, 중요 정보 및 부가 정보를 조회할 수 있도록 지원하는 판결문 정보 검색 시스템입니다.
+
 This system allows both the general public and legal professionals to search and view Korean court rulings, including the original texts, summaries, key facts, and supplementary legal information.
 
 ![demo](source/law.gif)
@@ -9,7 +10,7 @@ This system allows both the general public and legal professionals to search and
 
 ## Framework
 
-![framework](source/framework.png)
+<img src="source/framework.png", width="500"/>
 
 ### Functional Requirements(Korean)
 | Seq ID | 기능 코드 | 기능명 | 설명 |
