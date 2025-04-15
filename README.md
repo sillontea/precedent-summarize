@@ -9,8 +9,9 @@ This system allows both the general public and legal professionals to search and
 <br>
 
 ## Framework
-
-<img src="source/framework.png", width="500"/>
+<p>
+  <img src="source/framework.png", width="600"/>
+</p>
 
 ### Functional Requirements(Korean)
 | Seq ID | 기능 코드 | 기능명 | 설명 |
